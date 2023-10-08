@@ -6,6 +6,13 @@ import java.util.Arrays;
  1. Iterate decrement of j from n to o.
  2. Iterate increment of i to j
  3. Every iteration will leave the last element sorted.
+ Time Complexity -
+    Worst case - O(n^2)
+    Avg case   - O(n^2)
+    Best Case  - O(n)
+
+ Space Complexity - O(1)
+
  */
 public class BubbleSort {
 

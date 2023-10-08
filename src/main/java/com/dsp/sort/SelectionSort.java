@@ -8,6 +8,13 @@ import java.util.Arrays;
 3. Second iteration starts after the sorted index
 4. After every iteration left idx is sorted
 5. For every iteration swap the index(i) with the min of the rest of the array.
+
+ Time Complexity -
+    Worst case - O(n^2)
+    Avg case   - O(n^2)
+    Best Case  - O(n^2)
+
+ Space Complexity - O(1)
  */
 public class SelectionSort {
 
