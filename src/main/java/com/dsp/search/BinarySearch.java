@@ -1,6 +1,4 @@
-package com.bro;
-
-import java.util.Arrays;
+package com.dsp.search;
 
 public class BinarySearch {
 

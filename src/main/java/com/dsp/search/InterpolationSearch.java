@@ -1,4 +1,4 @@
-package com.bro;
+package com.dsp.search;
 
 /*
     1. loop while target greater than or equal to value at first index and

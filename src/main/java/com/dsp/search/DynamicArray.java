@@ -1,4 +1,4 @@
-package com.bro;
+package com.dsp.search;
 
 public class DynamicArray {
 
