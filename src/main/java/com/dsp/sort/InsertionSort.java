@@ -36,6 +36,7 @@ public class InsertionSort {
                     array[i] =temp;
                 }
             }
+            print(array);
         }
     }
 

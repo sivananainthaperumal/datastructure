@@ -2,6 +2,14 @@ package com.dsp.sort;
 
 import java.util.Arrays;
 
+/*
+ Time Complexity -
+    Worst case - O(n log n)
+    Avg case   - O(n log n)
+    Best Case  - O(n log n)
+
+ Space Complexity - O(n)
+ */
 public class MergeSort {
 
     public static void main(String[] args) {

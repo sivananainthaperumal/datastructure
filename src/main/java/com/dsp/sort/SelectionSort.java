@@ -30,17 +30,21 @@ public class SelectionSort {
     private void sort(int[] array) {
 
         int n= array.length;
+        //loop the entire array
         for (int i = 0; i < n; i++) {
             int minIdx = i;
+            //loop from the starting of the i and through
+            //identify the minIdx
             for (int j = i; j < n; j++) {
                 if(array[minIdx]>array[j]){
                     minIdx=j;
                 }
             }
+            //swap it after the first iteration
             int temp = array[minIdx];
             array[minIdx]=array[i];
             array[i]=temp;
-
+            print(array);
         }
     }
 

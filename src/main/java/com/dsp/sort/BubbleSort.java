@@ -29,18 +29,23 @@ public class BubbleSort {
         System.out.println("Bubble Sort");
         int n= array.length-1;
         System.out.println(n);
+        //loop which sets the high bound for the subsequent loop and decrements
         for (int j = n; j >0 ; j--) {
+            //loop till the high bound
             for (int i = 0; i < j; i++) {
+                // continue to swap if i is greater than i+1
                 if (array[i] > array[i + 1]) {
                     int temp = array[i + 1];
                     array[i + 1] = array[i];
                     array[i] = temp;
                 }
             }
+            print(array);
         }
     }
 
     private void print(int[] array){
         Arrays.stream(array).forEach(val->System.out.print(val+" "));
+        System.out.println();
     }
 }

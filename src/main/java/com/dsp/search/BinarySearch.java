@@ -1,5 +1,11 @@
 package com.dsp.search;
-
+/*
+1. Initialize low, mid to default, high to array length
+1.5 loop till low is less than high
+2. calculate the mid by adding low and high and divide by 2.
+3. if target is less than mid, assign mid to high
+4. if target is greater than mid, assign mid to low.
+ */
 public class BinarySearch {
 
     static int array[] = new int[100000];
@@ -44,10 +50,3 @@ public class BinarySearch {
 
 }
 
-/*
-1. Initialize low, mid to default, high to array length
-1.5 loop till low is less than high
-2. calculate the mid by adding low and high and divide by 2.
-3. if target is less than mid, assign mid to high
-4. if target is greater than mid, assign mid to low.
- */
