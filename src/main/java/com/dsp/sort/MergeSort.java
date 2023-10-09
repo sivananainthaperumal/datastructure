@@ -6,7 +6,7 @@ public class MergeSort {
 
     public static void main(String[] args) {
 
-        int array1[] = {2,5,23,32,78};
+        int array1[] = {2,5,23,32,78,90};
         int array2[] = {3,7,30,31,43,59};
 
         MergeSort ms = new MergeSort();
@@ -16,22 +16,17 @@ public class MergeSort {
 
     private int[] merge(int[] array1, int[] array2) {
 
-        int i=0;
-        int j=0;
-        int k=0;
+        int i=0, j=0, k=0;
         int arr[] = new int[array1.length+array2.length];
+
         while(i<array1.length && j< array2.length){
             if(array1[i]<array2[j]){
-                arr[k]=array1[i];
-                i++;k++;
+                arr[k++]=array1[i++];
             }else if(array1[i]>array2[j]){
-                arr[k]=array2[j];
-                j++;k++;
+                arr[k++]=array2[j++];
             }else if (array1[i]==array2[j]){
-                arr[k]=array1[i];
-                i++;k++;
-                arr[k]=array2[j];
-                j++;k++;
+                arr[k++]=array1[i++];
+                arr[k++]=array2[j++];
             }
         }
 
