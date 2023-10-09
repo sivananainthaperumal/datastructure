@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3286324b-9932-4533-a47f-c5153524c661" name="Changes" comment="insertion sort">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dsp/sort/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3286324b-9932-4533-a47f-c5153524c661" name="Changes" comment="merge sort optimization">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dsp/sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dsp/sort/MergeSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +211,21 @@
       <option name="project" value="LOCAL" />
       <updated>1696787320792</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="merge sort">
+      <created>1696811135115</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1696811135115</updated>
+    </task>
+    <task id="LOCAL-00009" summary="merge sort optimization">
+      <created>1696811408017</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1696811408017</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -236,7 +249,9 @@
     <MESSAGE value="expontenial search" />
     <MESSAGE value="bubble sort and selection sort" />
     <MESSAGE value="insertion sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="insertion sort" />
+    <MESSAGE value="merge sort" />
+    <MESSAGE value="merge sort optimization" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge sort optimization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -288,13 +303,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dsp/sort/MergeSort.java</url>
-          <line>37</line>
+          <line>49</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/dsp/sort/MergeSort.java</url>
-          <line>41</line>
+          <line>53</line>
           <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dsp/sort/MergeSort.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dsp/sort/MergeSort.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

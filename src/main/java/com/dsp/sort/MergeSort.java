@@ -6,18 +6,51 @@ public class MergeSort {
 
     public static void main(String[] args) {
 
-        int array1[] = {2,5,23,32,78,90};
-        int array2[] = {3,7,30,31,43,59};
+        int array[] = {2,5,3,32,78,9};
 
         MergeSort ms = new MergeSort();
-        int array3[] = ms.merge(array1,array2);
-        ms.print(array3);
+
+        ms.print(array);
+        ms.mergeSort(array);
+        ms.print(array);
     }
 
-    private int[] merge(int[] array1, int[] array2) {
+    /*
+    Divide and conquer
+    1. Divide the array into two and initialize the values from the original
+    2. Call mergeSort recursively to the leftArray and rightArray and then merge them
+     */
+    private void mergeSort(int[] array){
+        int length= array.length;
+        if(length<=1) return;
+        int mid = length/2;
+        int[] lArray = new int[mid];
+        int[] rArray = new int[length-mid];
+
+
+        for (int i = 0,j=0; i < length;i++) {
+            if(i<mid) {
+                lArray[i] = array[i];
+            }else{
+                rArray[j++]=array[i];
+            }
+        }
+
+
+        mergeSort(lArray);
+        mergeSort(rArray);
+        merge(lArray,rArray,array);
+
+    }
+
+    /*
+    1. Initialize three pointer, each pointing to their first indices of their respective array.
+    2. Compare the array element between the first and second array and copy the smallest one to the third array and increment the indices of the array from which it is copied
+    3. If any array's end is reached iterate the other array and copy rest of the element.
+     */
+    private int[] merge(int[] array1, int[] array2, int[] arr) {
 
         int i=0, j=0, k=0;
-        int arr[] = new int[array1.length+array2.length];
 
         while(i<array1.length && j< array2.length){
             if(array1[i]<array2[j]){
@@ -46,5 +79,6 @@ public class MergeSort {
 
     private void print(int[] array3) {
         Arrays.stream(array3).forEach(val-> System.out.print(val+ " "));
+        System.out.println();
     }
 }
